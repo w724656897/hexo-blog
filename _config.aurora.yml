@@ -1,0 +1,159 @@
+
+# https://aurora.tridiamond.tech/cn/configs/menu.html
+# 站点基本信息
+site:
+  author: Blog`shuai
+  subtitle: 笔记空间 # 
+  nick: cool # 博客子名字，会在 header 的 logo 下方显示。
+  description: 暂无介绍 # 会在博客简介中显示，用几句话描述博主相关信息（支持 HTML 标签）
+  link: '/'
+  language: en
+  multi_language: false # 多语言
+  logo: /img/logo.png
+  # avatar: https://avatars.githubusercontent.com/u/58581109?s=80&u=8500046120e26c06608bbf4c35fafb2e18bc393b&v=4
+  avatar: /img/avatar.png # 头像
+  beian:
+    number: '鄂ICP备20005121号'  # 备案编号
+    link: 'https://icp.chinaz.com/%E9%84%82ICP%E5%A4%8720005121%E5%8F%B7'    # 备案链接.
+  police_beian:
+    number: '鄂ICP备20005121号'
+    link: 'https://icp.chinaz.com/%E9%84%82ICP%E5%A4%8720005121%E5%8F%B7'
+  # Start date of the blog YYY-MM-DD
+  # 博客开始运行日期
+  started_date:
+  # Path unique identifier (文章 URL 唯一标识)
+  # uid: use unique ID
+  # slug: use generated slug base on title
+  # (Default is 'slug')
+# 作者
+authors:
+  ws:
+    name: JS_shuai
+    link: http://blog.shuai.com
+    avatar: /img/avatar.png
+    description: 自我介绍.
+    socials:
+      github: https://github.com/w724656897
+# 菜单      
+menu:
+  About: true
+  Tags: true
+  Archives: true
+  Friends: true
+  # 一个 github 项目的外部链接
+  # Aurora:
+  #   name: 'Aurora'
+  #   path: 'https://github.com/Aurora/hexo-theme-Aurora'
+# 主题配置
+theme:
+  dark_mode: true
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  feature: true
+  gradient:  # 渐变色
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+# 社交配置
+socials:
+  github: https://github.com/w724656897
+  # twitter: ''
+  # stackoverflow: ''
+  # weibo: 'https://weibo.com/u/7318914058'
+  # zhihu: 'https://www.zhihu.com/people/tridiamond'
+  # csdn: 'https://blog.csdn.net/TriDiamond6'
+  # juejin: 'https://juejin.cn/user/1873223546578589'
+  # customs:
+  #   facebook:
+  #     icon: /img/logo.png
+  #     link: https://facebook.com
+site_meta:
+  cdn: cn
+  favicon: /img/logo.png
+  description: ''
+  keywords: ''
+  author: ''
+# For local development only!
+gitalk:
+  enable: true
+  autoExpand: true
+  clientID: '42c817f1be3fef371820'
+  clientSecret: 'c43dfa0440f8de3320f3babbd1c5c6fea461050c'
+  repo: 'hexo-blog' ## dev-blo-comments
+  owner: 'w724656897' ## owner name
+  admin: ['JS_shuai'] ## ['admin_name']
+  id: uid
+  language: cn
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: cn
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: ['nick', 'mail']
+  admin: '' # admin username
+  recentComment: true
+
+# Twikoo comment plugin
+# see https://twikoo.js.org/quick-start.html
+twikoo:
+  enable: false
+  recentComment: true
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  lang: 'en' # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+
+# Waline comment plugin
+# see https://waline.js.org/guide/get-started/
+waline:
+  enable: false
+  recentComment: true
+  reaction: false
+  login: 'disable'
+  meta: ['nick', 'mail']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  wordLimit: 0
+  imageUploader: false
+  pageSize: 10
+  serverURL: '' # 填写服务端地址
+# 复制配置
+copy_protection:
+  enable: false
+  author:
+    cn: 作者
+  link:
+    cn: 本文来自于
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+# 机器人配置
+aurora_bot:
+  enable: false
+  locale: en
+  bot_type: dia
+  tips:
+injects:
+  scripts:
+  css:
+
+footer_links:
+  - title: # main title
+    links:
+      - title: # link title
+        url: # URL link
+      - title: # link title
+        url: # URL link
+      - title: Friends # link of friends mode / 友链模式
+        mode: 'links'
+shiki:
+  enable: true
+  backgroundColor: "#1a1a1a"
